@@ -1,0 +1,1 @@
+#Usar as funções para limpar os dados e usar esses dados para treinar o modelo
