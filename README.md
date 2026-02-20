@@ -179,6 +179,8 @@ learning_rate_init : 0.006847920095574782
 
 #  Setup do Ambiente
 
+**Pré-requisito:** Este projeto requer o **Python 3.11**. Certifique-se de ter a versão correta instalada antes de prosseguir.
+
 Este projeto pode ser executado de três formas:
 
 - Com Conda (ambiente isolado)
@@ -207,14 +209,15 @@ pip install -r requirements.txt
 # Opção 2 — Usando venv
 
 ```bash
-python -m venv venv
-
 # Linux/Mac
+python3.11 -m venv venv
 source venv/bin/activate  
 
 # Windows
+py -3.11 -m venv venv
 venv\Scripts\activate
 
+# Com o ambiente ativado, instale as dependências:
 pip install -r requirements.txt
 ```
 
