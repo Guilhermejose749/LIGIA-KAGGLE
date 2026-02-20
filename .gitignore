@@ -197,7 +197,7 @@ cython_debug/
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
+#  refer to https://docs.cursor.com/context/ignore-fAiles
 .cursorignore
 .cursorindexingignore
 
@@ -205,3 +205,26 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# conda
+.vscode/
+# --- Ligia Challenge Specifics ---
+
+# Ignorar artefatos de visualização e relatórios
+paper_artifacts/
+
+# Ignorar pastas de submissão
+submission/*
+
+!submission/submission.csv
+
+# Configuração da pasta data:
+# 1. Primeiro, ignoramos tudo dentro da pasta data
+data/*
+
+# 2. Abrimos exceção para os arquivos brutos que DEVEM ser rastreados
+!data/train.csv
+!data/test.csv
+
+# arquivo de estrutura do projeto
+teste.py
