@@ -23,9 +23,9 @@ def preprocess_data(df):
     
     # Criar features cíclicas para o tempo
     if 'Time' in df.columns:
-        df['Hour'] = (df['Time'] / 3600) % 24
-        df['hour_sin'] = np.sin(2 * np.pi * df['Hour'] / 24)
-        df['hour_cos'] = np.cos(2 * np.pi * df['Hour'] / 24)
+        df['Hour'] = df['Time'].apply(lambda x: np.floor(x / 3600) % 24)
+        df['Hour_Sin'] = np.sin(2 * np.pi * df['Hour'] / 24)
+        df['Hour_Cos'] = np.cos(2 * np.pi * df['Hour'] / 24)
         df.drop(columns=['Time'], inplace=True)
     
     return df
