@@ -359,6 +359,44 @@ jupyter lab
 ├── LICENSE
 ├── README.md
 ├── data
+│   ├── test.csv
+│   └── train.csv
+├── environment.yml
+├── models
+│   ├── best_model_fraud.pkl
+│   ├── features_used.pkl
+│   └── new_models
+│       ├── modelo_catboost.pkl
+│       ├── modelo_lightgbm.pkl
+│       ├── modelo_neural_net.pkl
+│       ├── modelo_random_forest.pkl
+│       ├── modelo_regressao_logistica.pkl
+│       └── modelo_xgboost.pkl
+├── notebooks
+│   ├── 1.0_analise_exploratoria.ipynb
+│   ├── 1.1_feature_engineering.ipynb
+│   ├── 2.0_treinamento_modelos.ipynb
+│   ├── 2.1_criar_arquivos_submission.ipynb
+│   └── 3.0_analise_modelo_escolhido.ipynb
+├── requirements.txt
+├── src
+│   ├── 1_preparar_dados.py
+│   ├── 2_treinamento_modelo.py
+│   └── 3_inferencia.py
+└── submission
+    └── submission.csv
+```
+
+---
+
+#  Organização do Projeto após execução dos notebooks
+
+```
+├── .gitattributes
+├── .gitignore
+├── LICENSE
+├── README.md
+├── data
 │   ├── X_test_final.csv
 │   ├── X_train.csv
 │   ├── X_val.csv
