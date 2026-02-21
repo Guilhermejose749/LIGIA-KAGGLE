@@ -6,13 +6,32 @@ O objetivo é classificar transações como fraudulentas ou legítimas em um cen
 
 ---
 
-#  Dataset
+# Como Baixar o Projeto (Aviso Importante - Git LFS)
 
-Este projeto utiliza o dataset oficial da competição Ligia:
+Devido ao tamanho dos arquivos de dados (`train.csv` e `test.csv` possuem mais de 100MB), este repositório utiliza o **Git LFS (Large File Storage)** para o versionamento dos arquivos `.csv`.
+
+Por isso, **é altamente recomendável realizar o clone do repositório** em vez de baixar o arquivo `.zip`:
+
+```bash
+git clone https://github.com/Guilhermejose749/LIGIA-KAGGLE.git
+```
+
+ **Por que não usar o "Download ZIP"?**
+Se você baixar o projeto pelo botão "Download ZIP" do GitHub, os arquivos grandes não serão baixados corretamente. Em vez dos dados reais, você receberá apenas arquivos de texto contendo ponteiros (metadados do LFS).
+
+### Alternativa: Baixando os dados do Kaggle
+
+Caso você não possa usar o `git clone` ou não possua o Git LFS instalado, baixe o repositório como ZIP normalmente. No entanto, você precisará obter o dataset oficial diretamente do Kaggle e colocar os arquivos extraídos dentro da pasta `data/`.
+
+Via API do Kaggle:
 
 ```bash
 kaggle competitions download -c ligia-machine-learning
 ```
+
+Ou acesse a página da competição e faça o download manualmente. Certifique-se de que os arquivos `train.csv` e `test.csv` fiquem na raiz da pasta `data/`.
+
+### Sobre os Arquivos
 
 O dataset é composto por dois arquivos principais:
 
