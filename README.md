@@ -39,6 +39,11 @@ Essa separação garante:
 
 ---
 
+## Relatório Técnico-Científico
+
+A fundamentação científica completa deste projeto, incluindo a Análise Exploratória detalhada, as escolhas de Engenharia de Características (como a transformação trigonométrica do tempo), e a explicabilidade dos modelos com SHAP, encontra-se no arquivo **`Relatorio_LIGIA.pdf`** disponível na raiz deste repositório.
+
+---
 ## Características do Problema
 
 O desafio é caracterizado como:
@@ -104,9 +109,11 @@ Todos foram avaliados com validação cruzada estratificada utilizando **ROC-AUC
 
 ---
 
-#  Modelo Final
+# Modelo Final
 
-O modelo que apresentou **maior ROC-AUC no conjunto de teste público do desafio** foi:
+O modelo escolhido como campeão para a submissão final foi o **`modelo_neural_net.pkl`** (Multilayer Perceptron), que obteve o maior ROC-AUC no teste cego. O modelo **`modelo_xgboost.pkl`** também foi destacado como solução secundária de alta robustez. Ambos possuem análise profunda de interpretabilidade via SHAP documentada no relatório e notebooks.
+
+---
 
 ##  Neural Network (MLPClassifier)
 

@@ -228,3 +228,7 @@ data/*
 
 # arquivo de estrutura do projeto
 teste.py
+
+# modelo gerado no src para reprodução
+
+models/best_neural_net_model.pkl
