@@ -388,6 +388,7 @@ jupyter lab
 │   ├── 2.0_treinamento_modelos.ipynb
 │   ├── 2.1_criar_arquivos_submission.ipynb
 │   └── 3.0_analise_modelo_escolhido.ipynb
+├── Relatório_LIGIA
 ├── requirements.txt
 ├── src
 │   ├── 1_preparar_dados.py
@@ -447,6 +448,7 @@ jupyter lab
 │   ├── shap_numerical_importance_XGBoost.csv
 │   ├── shap_summary_Neural_net.png
 │   └── shap_summary_XGBoost.png
+├── Relatório_LIGIA
 ├── requirements.txt
 ├── src
 │   ├── 1_preparar_dados.py
