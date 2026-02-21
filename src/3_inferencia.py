@@ -44,7 +44,7 @@ submission = pd.DataFrame({
     'target': submission_probs
 })
 
-submission_file = os.path.join(PATH_SUBMISSION, 'submission.csv')
+submission_file = os.path.join(PATH_SUBMISSION, 'submission_NN.csv')
 submission.to_csv(submission_file, index=False)
 
 print(f"✅ Arquivo salvo com sucesso em: {submission_file}")
