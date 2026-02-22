@@ -407,7 +407,7 @@ jupyter lab
 │   ├── 2.0_treinamento_modelos.ipynb
 │   ├── 2.1_criar_arquivos_submission.ipynb
 │   └── 3.0_analise_modelo_escolhido.ipynb
-├── Relatório_LIGIA
+├── Relatório_LIGIA.pdf
 ├── requirements.txt
 ├── src
 │   ├── 1_preparar_dados.py
@@ -419,7 +419,8 @@ jupyter lab
 
 ---
 
-#  Organização do Projeto após execução dos notebooks
+#  Organização do Projeto após execução dos notebooks e scripts
+
 
 ```
 ├── .gitattributes
@@ -432,6 +433,7 @@ jupyter lab
 │   ├── X_val.csv
 │   ├── df_test_processed.csv
 │   ├── df_train_processed.csv
+│   ├── test_ids.pkl
 │   ├── robust_scaler.pkl
 │   ├── test.csv
 │   ├── train.csv
@@ -440,6 +442,7 @@ jupyter lab
 ├── environment.yml
 ├── models
 │   ├── best_model_fraud.pkl
+│   ├── best_neural_net_model.pkl
 │   ├── features_used.pkl
 │   └── new_models
 │       ├── modelo_catboost.pkl
@@ -466,8 +469,9 @@ jupyter lab
 │   ├── shap_numerical_importance_Neural_net.csv
 │   ├── shap_numerical_importance_XGBoost.csv
 │   ├── shap_summary_Neural_net.png
-│   └── shap_summary_XGBoost.png
-├── Relatório_LIGIA
+│   ├── shap_summary_XGBoost.png
+│   └── tabela_metricas_comparativas.csv
+├── Relatório_LIGIA.pdf
 ├── requirements.txt
 ├── src
 │   ├── 1_preparar_dados.py
@@ -478,7 +482,8 @@ jupyter lab
     │   ├── submission_Cat.csv
     │   ├── submission_Light.csv
     │   └── submission_XGB.csv
-    └── submission.csv
+    ├── submission.csv
+    └── submission_NN.csv
 ```
 
 ---
